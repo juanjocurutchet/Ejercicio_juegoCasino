@@ -2,7 +2,7 @@ import { JuegoDeCasino } from "./juegoDecasino"
 import { Tragamonedas } from "./tragamonedas"
 import { Ruleta } from "./ruleta"
 
-// Creamos una instancia de la clase Tragamonedas
+// Creo una instancia de la clase Tragamonedas
 
 const miTragamonedas = new Tragamonedas("Tragamonedas 1", 5, 3);
 console.log(`Precio del juego: ${miTragamonedas.getPrecio()}`);
