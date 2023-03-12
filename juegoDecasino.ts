@@ -8,14 +8,25 @@ export class JuegoDeCasino {
       this.nombreJuego = nombreJuego;
       this.precio = precio;
     }
+    public getPrecio(): number {
+      return this.precio;
+    }
+    public setPrecio(precio:number): void {
+      this.precio = precio
+    }
+
+    public getNombreDelJuego(): string {
+      return this.nombreJuego;
+    }
+    public setNombreDelJuego(nombreJuego:string): void {
+      this.nombreJuego = nombreJuego
+    }
+
   
     public juegoElegido(): void {
       console.log(`Estás jugando al juego ${this.nombreJuego}`);
     }
   
-    public getPrecio(): number {
-      return this.precio;
-    }
   }
   
     

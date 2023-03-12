@@ -9,6 +9,13 @@ export class Tragamonedas extends JuegoDeCasino {
       super(nombre, precio);
       this.numeroDeCoincidencias = numeroDeCoincidencias;
     }
+
+    public getNumeroDeCoincidencias(): number {
+      return this.numeroDeCoincidencias;
+    }
+    public setNumeroDeCoincidencias(numeroDeCoincidencias:number): void {
+      this.numeroDeCoincidencias = numeroDeCoincidencias
+    }
   
     public girarRodillos(): void {
       console.log(`Has logrado ${this.numeroDeCoincidencias} coincidencias`);

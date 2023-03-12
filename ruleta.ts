@@ -8,6 +8,13 @@ export class Ruleta extends JuegoDeCasino {
       super(nombre, precio);
       this.numeroDeCasillero = numeroDeCasillero;
     }
+
+    public getNumeroDeCasillero(): number {
+      return this.numeroDeCasillero;
+    }
+    public setNumeroDeCasillero(numeroDeCasillero:number): void {
+      this.numeroDeCasillero = numeroDeCasillero
+    }
   
     public girarRuleta(): void {
       console.log(`La bolilla ha caido en el numero: ${this.numeroDeCasillero}`);
